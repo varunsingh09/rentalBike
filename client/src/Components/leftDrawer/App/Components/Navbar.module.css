@@ -1,0 +1,101 @@
+.navbarLinks {
+  border: 1px solid gray;
+  background-color: white;
+}
+
+.navbar {
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeLogo {
+  width: 70%;
+  margin: 0px 0px 0px 0px;
+  /* border: 1px solid black; */
+  position: relative;
+  left: -50px;
+}
+
+.tarrifLink,
+.whatsNewLink,
+.offersLink,
+.partnerWithUsLink,
+.searchLink {
+  text-decoration: none;
+  margin-right: 3%;
+  color: rgb(56, 54, 54);
+  padding: 0.8%;
+  font-weight: 600;
+}
+
+.tarrifLink:hover {
+  background-color: rgb(254, 210, 80);
+}
+.whatsNewLink:hover {
+  background-color: rgb(254, 210, 80);
+}
+.offersLink:hover {
+  background-color: rgb(254, 210, 80);
+}
+.partnerWithUsLink:hover {
+  background-color: rgb(254, 210, 80);
+}
+.searchLink:hover {
+  background-color: rgb(254, 210, 80);
+}
+
+.locationBtn {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  outline: none;
+  border: 2px solid rgb(254, 210, 80);
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.locationBtn span {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 2px 5px 0px 10px;
+}
+
+.locationBtn i {
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  padding: 15px;
+  margin: 6px 0 6px 50px;
+}
+
+.profile:hover {
+  background-color: rgb(254, 210, 80);
+}
+
+.profile span {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.profile i {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.profile img {
+  width: 25%;
+}
+
+.currentUser {
+  text-transform: capitalize;
+}

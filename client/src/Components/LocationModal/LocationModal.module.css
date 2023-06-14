@@ -1,0 +1,112 @@
+.Paper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0px auto;
+  min-height: 600px;
+  -webkit-animation: slide-in-elliptic-top-fwd 0.7s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+}
+
+.LocationModal {
+  max-width: 1600px;
+}
+
+.LocationModal {
+  padding: 30px;
+}
+
+.LocationModal__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LocationModal__search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  border: 2px solid rgb(224, 219, 219);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.LocationModal__search i {
+  margin: 5px;
+}
+
+.LocationModal__search input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.LocationModal__cards {
+  width: 100%;
+  display: flex;
+}
+
+.Card {
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+  position: relative;
+  margin: 15px;
+}
+
+.Card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.Card p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.Card:hover {
+  transform: scale(1.1);
+}
+
+/* animations */
+
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
